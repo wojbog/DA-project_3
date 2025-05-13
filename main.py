@@ -13,13 +13,13 @@ from sklearn.model_selection import train_test_split
 dataset_file = "./data/car evaluation.csv"
 df = pd.read_csv(dataset_file, header=None)
 df.columns = [
-        "dupa1",
-        "dupa2",
-        "dupa3",
-        "dupa4",
-        "dupa5",
-        "dupa6",
-        "category"
+        "buying_price"
+        "maintanace_price",
+        "number_of_doors",
+        "capacity",
+        "boot_size",
+        "safety",
+        "evaluation"
 ]
 
 X = df.drop(columns=["category"])
